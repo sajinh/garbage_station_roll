@@ -60,6 +60,9 @@ You need to prepare a few things for this to work smoothly:
 
 5. Make sure lines 88 and 89 point to the correct attachments.
 
+6. Edit body.txt.erb as needed. Please see lines 6, 65, and 67
+   especially.
+
 The program `prepare_mail.rb` can be run every month as follows:
 
 `ruby prepare_mail.rb <month> [year]`
