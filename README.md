@@ -54,9 +54,15 @@ You need to prepare a few things for this to work smoothly:
   university. See method `get_passwd` defined in line 61 of `prepare_mail.rb`
   and make sure the encrypted password is decrypted properly.
 
+3. Edit line 66 of `prepare_mail.rb` to add the fully qualified name of your mail server.
+3. Edit line 68 of `prepare_mail.rb` to add the domain of your server.
 3. Edit line 69 of `prepare_mail.rb` to add the correct the user name.
 
-4. Edit line 81 of `prepare_mail.rb` to add the correct the user name.
+4. Edit line 81 of `prepare_mail.rb` to add the correct email address of
+   the sender.
+
+4. Edit lines 82,83,84,85 to add the email addresses of the groups
+   to whom the mail should be sent.
 
 5. Make sure lines 88 and 89 point to the correct attachments.
 
