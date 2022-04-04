@@ -63,9 +63,9 @@ def get_passwd
   end
 end
 
-options = { :address              => "promsv1.u-aizu.ac.jp",
+options = { :address              => "<full address of your mail server>",
             :port                 => 465,
-            :domain               => 'u-aizu.ac.jp',
+            :domain               => '<your domain>
             :user_name            => '<your_user_name>',
             :password             => Base64.decode64(get_passwd+"=\n"),
             :authentication       => :login,
@@ -78,11 +78,11 @@ Mail.defaults do
 end
 
 mail = Mail.new do
-  from     '<your_user_name>@u-aizu.ac.jp'
-  to       ['matsunaga-a@u-aizu.ac.jp', 
-           'matsunaga-b@u-aizu.ac.jp',
-           'matsunaga-c@u-aizu.ac.jp', 
-           'matsunaga-d@u-aizu.ac.jp']
+  from     '<your_user_name>@<your_domain>'
+  to       ['<mailing group 1'>,
+           '<mailing group 2'>,
+           '<mailing group 3'>,
+           '<mailing group 4'>]
   subject  mail_subject
   body     mail_text
   add_file :filename => 'how_to_dispose_garbage.pdf', :content => File.read('./how_to_dispose_garbage.pdf')
