@@ -12,7 +12,7 @@ the faculty housing should manage the garbage station. It looks at
 a file-based (stored in yaml format) database of past duties for
 this purpose.
 
-You need two things to prepare the roll:
+You need three things to prepare the roll:
 
 1. A collection of `*.yml files` that tells the software about 
 which residents managed the station in the past year(s) or past months.
@@ -28,7 +28,7 @@ The program is run every month as follows:
 
 `ruby roll.rb <month> [year]`
 
-Here <month> is an integer specifying the month for which the roll should
+Here `<month>` is an integer specifying the month for which the roll should
 be made. It is a required argument.
 
 [year] is optional, and is an integer specifying the year.
@@ -73,7 +73,7 @@ The program `prepare_mail.rb` can be run every month as follows:
 
 `ruby prepare_mail.rb <month> [year]`
 
-Here <month> is an integer specifying the month for which the mail should
+Here `<month>` is an integer specifying the month for which the mail should
 be sent. It is a required argument.
 
 [year] is optional, and is an integer specifying the year.
